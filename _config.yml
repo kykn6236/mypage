@@ -171,7 +171,7 @@ exclude:
   - package-lock.json
   - Rakefile
   - README
-  - RmdToMd
+  - _Rmd
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
