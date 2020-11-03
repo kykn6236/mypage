@@ -2,17 +2,6 @@
 title: "From data cleaning to Bayesian estimation: The story of my honors thesis told through code"
 author: "Kyle Kent"
 layout: posts
-default:
-    - scope:
-        path: "/HT_work_flow"
-        type: posts
-      values:
-        layout: single
-        author_profile: true
-        read_time: true
-        comments: true
-        share: true
-        related: true
 ---
 
 Introduction
