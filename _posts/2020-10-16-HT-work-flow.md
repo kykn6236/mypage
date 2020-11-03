@@ -469,7 +469,7 @@ ggplot(dt.EFlong, aes(x = measure, y = value)) +
   labs(title = 'Scored EF variables with outliers in red')
 ```
 
-![](HT_rmd2md_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](/Users/kylekent/Desktop/research/CS_misc/GitHub/mypage/_posts/HT_rmd2md_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 As you can see the scored values have a few outliers. The scores need to be winsorized, meaning the outlier values are kept but are restricted to being +-3 standard deviations, to avoid them influencing measures of central tendency,
 
@@ -498,7 +498,7 @@ gadd[trailw2.dif.simp > gadd[,mean(trailw2.dif.simp.pl, na.rm = T)] + gadd[,sd(t
    trailw2.dif.simp := gadd[,mean(trailw2.dif.simp.pl, na.rm = T)] + gadd[,sd(trailw2.dif.simp.pl, na.rm = T)]*3]
 ```
 
-Now that the scores are winsorized they have a new distribution which is much more normal and the minimum and maximum are much less extreme. Despite there being outliers with the winsorized scores, they cannot be normalized further without changing the outcome of our study.
+Now that the scores are winsorized, they have a new distribution which is much more normal and the minimum and maximum are less extreme. Despite there still being outliers, they cannot be normalized further without changing the outcome of our study.
 
 ``` r
 dt.EF <- select(gadd, stroopw1 = stroopw1.est, stroopw2 = stroopw2.est, trailw1 = trailw1.dif.simp, trailw2 = trailw2.dif.simp)
