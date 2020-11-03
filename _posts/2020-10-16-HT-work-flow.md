@@ -1,5 +1,5 @@
 ---
-title: "t"
+title: "From data cleaning to Bayesian estimation: The story of my honors thesis told through code"
 author: "Kyle Kent"
 layout: posts
 default:
